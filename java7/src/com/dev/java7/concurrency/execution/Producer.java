@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 public class Producer extends AbstractWorker<Integer> {
 
 	/** The random. */
-	private static final Random RANDOM = new Random();
+	private volatile static Random RANDOM = new Random();
 
 	/**
 	 * Instantiates a new producer.
