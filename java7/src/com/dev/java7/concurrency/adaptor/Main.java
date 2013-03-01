@@ -17,10 +17,6 @@ public class Main {
 		taskAdaptor.run();
 
 		new Thread(taskAdaptor).start();
-		
-		int value  = MathUtil.SINGLETON.add(10,20,30);
-		System.out.println(value);
-		value  = MathUtil.SINGLETON.multiply(20,30);
-		System.out.println(value);
+
 	}
 }
