@@ -18,8 +18,7 @@ public class TaskAdaptor implements Runnable {
 		task = inTask;
 	}
 
-	/*
-	 * (non-Javadoc)
+	/**
 	 * 
 	 * @see java.lang.Runnable#run()
 	 */

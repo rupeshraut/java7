@@ -5,8 +5,7 @@ package com.dev.java7.concurrency.adaptor;
  */
 public class SomeTask implements Task {
 
-	/*
-	 * (non-Javadoc)
+	/**
 	 * 
 	 * @see concurrency.adaptor.Task#perform()
 	 */
