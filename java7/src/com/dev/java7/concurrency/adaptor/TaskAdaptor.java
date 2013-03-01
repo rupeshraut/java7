@@ -3,7 +3,7 @@ package com.dev.java7.concurrency.adaptor;
 /**
  * The Class TaskAdaptor.
  */
-public class TaskAdaptor implements Runnable {
+public abstract class TaskAdaptor {
 
 	/** The task. */
 	private final Task task;
@@ -11,19 +11,18 @@ public class TaskAdaptor implements Runnable {
 	/**
 	 * Instantiates a new task adaptor.
 	 * 
-	 * @param inTask
-	 *            the in task
+	 * @param task
+	 *            the task
 	 */
-	public TaskAdaptor(final Task inTask) {
-		task = inTask;
+	public TaskAdaptor(Task task) {
+		super();
+		this.task = task;
 	}
 
 	/**
-	 * 
-	 * @see java.lang.Runnable#run()
+	 * Perform.
 	 */
-	@Override
-	public void run() {
+	protected void perform() {
 		task.perform();
 	}
 
